@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="G7k-0N-1on">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -196,6 +196,87 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+        <!--Demo View Controller-->
+        <scene sceneID="x4c-rb-BFS">
+            <objects>
+                <viewController id="G7k-0N-1on" customClass="DemoViewController" customModule="Stack_View_in_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IIU-TO-utR"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Y4-i3-yDA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LzW-70-X5a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PDG-jM-Upn">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pKh-lT-24C">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Practicando" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4q-G3-gTQ">
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stack View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Tw-iw-46K">
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OCB-90-bCZ">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXs-c0-u43">
+                                                <state key="normal" title="Aceptar"/>
+                                                <connections>
+                                                    <action selector="btnAceptar:" destination="G7k-0N-1on" eventType="touchUpInside" id="CkL-lf-qib"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q07-he-Ic9">
+                                                <state key="normal" title="Eliminar">
+                                                    <color key="titleColor" red="1" green="0.019703895829999998" blue="0.1063439712" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnCancelar:" destination="G7k-0N-1on" eventType="touchUpInside" id="F1o-46-vo1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2B-L5-qyJ">
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="Cancelar"/>
+                                                <connections>
+                                                    <action selector="btnCancelar:" destination="G7k-0N-1on" eventType="touchUpInside" id="dbj-R8-xtv"/>
+                                                    <action selector="btncancelarTodo:" destination="G7k-0N-1on" eventType="touchUpInside" id="iVc-Sg-7DY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="q07-he-Ic9" firstAttribute="leading" secondItem="OCB-90-bCZ" secondAttribute="leading" constant="5" id="quZ-Al-eGk"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="OCB-90-bCZ" firstAttribute="leading" secondItem="PDG-jM-Upn" secondAttribute="leading" constant="87" id="0Pe-8V-zS6"/>
+                                    <constraint firstItem="OCB-90-bCZ" firstAttribute="top" secondItem="pKh-lT-24C" secondAttribute="bottom" constant="37" id="2x3-96-8dP"/>
+                                    <constraint firstAttribute="trailing" secondItem="OCB-90-bCZ" secondAttribute="trailing" constant="87" id="6Qf-Bm-CkL"/>
+                                    <constraint firstItem="pKh-lT-24C" firstAttribute="top" secondItem="PDG-jM-Upn" secondAttribute="top" constant="18" id="F4l-yz-Ap3"/>
+                                    <constraint firstAttribute="bottom" secondItem="OCB-90-bCZ" secondAttribute="bottom" constant="42" id="Jhj-vg-Mpf"/>
+                                    <constraint firstAttribute="trailing" secondItem="pKh-lT-24C" secondAttribute="trailing" constant="74" id="WNL-Ch-QGt"/>
+                                    <constraint firstItem="pKh-lT-24C" firstAttribute="leading" secondItem="PDG-jM-Upn" secondAttribute="leading" constant="74" id="Wvh-b2-aPo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8318509615384615" green="0.8318509615384615" blue="0.8318509615384615" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="PDG-jM-Upn" firstAttribute="centerY" secondItem="LzW-70-X5a" secondAttribute="centerY" id="LWG-Wg-zIO"/>
+                            <constraint firstItem="PDG-jM-Upn" firstAttribute="centerX" secondItem="LzW-70-X5a" secondAttribute="centerX" id="bHf-89-zgF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cBk-sA-KvE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79" y="927"/>
         </scene>
     </scenes>
 </document>

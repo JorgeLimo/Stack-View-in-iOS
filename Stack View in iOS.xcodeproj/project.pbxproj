@@ -12,6 +12,7 @@
 		FBA7BFD61E56770000206578 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBA7BFD41E56770000206578 /* Main.storyboard */; };
 		FBA7BFD81E56770000206578 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA7BFD71E56770000206578 /* Assets.xcassets */; };
 		FBA7BFDB1E56770000206578 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBA7BFD91E56770000206578 /* LaunchScreen.storyboard */; };
+		FBA7BFE31E56933E00206578 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA7BFE21E56933E00206578 /* DemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FBA7BFD71E56770000206578 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBA7BFDA1E56770000206578 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBA7BFDC1E56770000206578 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBA7BFE21E56933E00206578 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				FBA7BFD71E56770000206578 /* Assets.xcassets */,
 				FBA7BFD91E56770000206578 /* LaunchScreen.storyboard */,
 				FBA7BFDC1E56770000206578 /* Info.plist */,
+				FBA7BFE21E56933E00206578 /* DemoViewController.swift */,
 			);
 			path = "Stack View in iOS";
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBA7BFE31E56933E00206578 /* DemoViewController.swift in Sources */,
 				FBA7BFD31E56770000206578 /* ViewController.swift in Sources */,
 				FBA7BFD11E56770000206578 /* AppDelegate.swift in Sources */,
 			);
